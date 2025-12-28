@@ -6,15 +6,17 @@ public class Main {
 
         ArrayList<Libro> biblioteca = new ArrayList<>();
         
-        Libro libro1 = new Libro("Don Quijote de la Mancha", "Miguel de cervantes");
-        Libro libro2 = new Libro("El libro troll", "El RubiusOMG");
-
-        biblioteca.add(libro1);
-        biblioteca.add(libro2);
-
         Bibliotecario Manuel = new Bibliotecario(1800, "Organizador de libros", "Manuel", "0001", "872342");
-        Socio Santiago = new Socio("Santiago", "0145", "974321");
 
-        System.out.println(biblioteca.get(0).getTitulo());
+        Libro quijote = new Libro("Don Quijote", "Cervantes");
+        Socio santiago = new Socio("Santiago", "ID-01", "1234");
+
+        santiago.prestar(quijote); 
+
+        santiago.prestar(quijote);
+
+        santiago.devolver(quijote);
+
+        santiago.prestar(quijote);
     }
 }
