@@ -9,6 +9,7 @@ public class Socio extends Usuario {
         this.misPrestados = new ArrayList<>();
     }
 
+
     public void prestar(Libro libro){
         if (libro.getDisponibilidad() == true && misPrestados.size() < 3){
             libro.setDisponibilidad(false);

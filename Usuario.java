@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Usuario {
 
     private String nombre;
@@ -9,6 +11,8 @@ public class Usuario {
         this.ID = ID;
         this.contraseña = contraseña;
     }
+
+
 
     public String getNombre(){
         return nombre;
