@@ -234,5 +234,8 @@ public class Main {
             }
         }
         entrada2.close();
+        System.out.println(" ");
+        System.out.println("Programa finalizado.");
+        System.out.println(" ");
     }
 }
