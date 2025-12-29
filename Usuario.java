@@ -12,8 +12,6 @@ public class Usuario {
         this.contraseña = contraseña;
     }
 
-
-
     public String getNombre(){
         return nombre;
     }
@@ -28,11 +26,4 @@ public class Usuario {
         return "Usuario: " + nombre + " [ID: " + ID + "]";
     }
 
-    public boolean verificarContraseña(String contraseñaCorrecta){
-        if (contraseñaCorrecta.equals(contraseña)){
-            return true;
-        }else{
-            return false;
-        }
-    }
 }
